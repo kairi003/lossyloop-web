@@ -23,61 +23,61 @@
 
   <main>
     <form id="form">
-      <div>
-        <label for="source">Source</label>
+      <section>
+        <h2><label for="source">Source</label></h2>
         <p>Select an image file to lossyloop.</p>
         <input id="source" type="file" name="source" accept="image/*">
-      </div>
+      </section>
 
-      <div>
-        <label for="quality">Quality</label>
+      <section>
+        <h2><label for="quality">Quality</label></h2>
         <p>Set the quality of the image. (1-100)</p>
         <input id="quality" type="number" name="quality" value="10" min="1" max="100">
-      </div>
+      </section>
 
-      <div>
-        <label for="iteration">Iteration</label>
+      <section>
+        <h2><label for="iteration">Iteration</label></h2>
         <p>Set the number of iterations. (1-1000)</p>
         <input id="iteration" type="number" name="iteration" value="20" min="1" max="1000">
-      </div>
+      </section>
 
-      <div>
-        <label for="method">Method</label>
+      <section>
+        <h2><label for="method">Method</label></h2>
         <p>Select the method of compression.</p>
         <select id="method" name="method">
           <option value="image/jpeg">jpeg</option>
           <option value="image/webp">webp</option>
           <option value="image/png">png (lossless)</option>
         </select>
-      </div>
+      </section>
 
-      <div>
-        <label for="wait">Wait</label>
+      <section>
+        <h2><label for="wait">Wait</label></h2>
         <p>Wait milliseconds between iterations. (0-1000)</p>
         <input id="wait" type="number" name="wait" value="100" min="0" max="1000">
-      </div>
+      </section>
 
-      <div class="buttons">
+      <section class="buttons">
         <button id="start" type="button">Start</button>
         <button id="reset" type="reset">Reset</button>
-      </div>
+      </section>
 
       <hr />
 
-      <div>
-        <label for="original">Original</label>
+      <section>
+        <h2><label for="original">Original</label></h2>
         <output id="original" for="source">
           <canvas id="originalCanvas" width="1600" height="900"></canvas>
         </output>
-      </div>
+      </section>
 
-      <div>
-        <label for="result">Result</label>
+      <section>
+        <h2><label for="result">Result</label></h2>
         <output id="result" for="source quality iteration method">
           <progress id="progress" value="0" max="100"></progress>
           <canvas id="resultCanvas" width="1600" height="900"></canvas>
         </output>
-      </div>
+      </section>
     </form>
   </main>
 
