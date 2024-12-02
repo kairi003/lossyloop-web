@@ -23,16 +23,26 @@ h1 {
   color: #444;
 }
 
-figure {
+/* figure {
   margin: 10px auto;
   text-align: center;
 }
 
 blockquote {
+  position: relative;
   font-style: italic;
   color: #666;
   margin-bottom: 5px;
+  quotes: '"' '"' "'" "'";
 }
+
+blockquote p:before {
+  content: open-quote;
+}
+
+blockquote p:after {
+  content: close-quote;
+} */
 
 main {
   background: #fff;
