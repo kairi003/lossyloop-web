@@ -27,14 +27,14 @@ const progress = document.getElementById('progress');
 const DEFAULT_WIDTH = 1600;
 const DEFAULT_HEIGHT = 900;
 
-async function setCanvas(canvas, image) {
+function setCanvas(canvas, image) {
   const ctx = canvas.getContext('2d');
   canvas.width = image.width;
   canvas.height = image.height;
   ctx.drawImage(image, 0, 0);
 }
 
-async function clearCanvas(canvas) {
+function clearCanvas(canvas) {
   canvas.width = DEFAULT_WIDTH;
   canvas.height = DEFAULT_HEIGHT;
   const ctx = canvas.getContext('2d');
